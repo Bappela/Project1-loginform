@@ -45,7 +45,7 @@ function App() {
     <div className="form">
       <header className="formContainer">
         <form onSubmit={handleSubmit}>
-          <h1>Login Form</h1>
+          <h1>Ro'yxatga kirish</h1>
           <hr />
           <div className="uiForm">
             <div className="formField">
