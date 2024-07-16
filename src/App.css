@@ -1,0 +1,89 @@
+body {
+  background: rgb(2, 0, 36); /* whole page background color */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 219, 248, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  ); /* https://cssgradient.io/ */
+  overflow-y: hidden; /*  stops scroll move */
+}
+
+.formContainer {
+  height: 100vh; /* it must be set as default fro the screen */
+  width: 100%; /* it must be set as default fro the screen */
+  display: flex; /* it must be set as default fro the screen */
+  align-items: center; /* makes vertical center */
+  justify-content: center; /* makes horizontal center */
+}
+
+h1 {
+  text-align: center;
+}
+
+.formContainer form {
+  background-color: rgb(250, 233, 233);
+  width: 70%; /* current browser left and right side width size keeps 70% */
+  max-width: 450px; /* it allows not to exceed 450px */
+  padding: 30px; /* changes form 4 side size from components */
+  border-radius: 10px; /* changes the form 4 corners  */
+  box-shadow: 7px 10px 20px 1px #777777; /* https://hiroyuki-n.github.io/boxShadow_generator/ */
+}
+
+.uiForm {
+  display: flex;
+  flex-direction: column; /* arranges label and input box as column */
+  align-items: center;
+  justify-content: space-evenly; /* arranges the space between components */
+  height: 400px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formField input {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formField input:focus {
+  outline: none; /* stops input box focus color */
+}
+
+.formField label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 3px; /* user name, emaail, password distance between inputbox */
+}
+
+button {
+  background-color: rgb(83, 118, 245);
+  width: 100%;
+  margin-top: 10px; /* space between input box and button */
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 1s; /* hover appear and disappear speed */
+}
+
+button:hover {
+  background-color: rgb(17, 59, 212);
+}
+
+.errorMsg {
+  color: red;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.msgOk {
+  color: green;
+  margin-top: 15px;
+}
